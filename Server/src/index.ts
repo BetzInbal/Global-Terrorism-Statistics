@@ -1,4 +1,4 @@
-import connectDB from "./models/config/db";
-import { getFileData } from "./models/config/seed";
+import connectDB from "./config/db";
+import { getFileData } from "./config/seed";
 import "dotenv/config";
 
