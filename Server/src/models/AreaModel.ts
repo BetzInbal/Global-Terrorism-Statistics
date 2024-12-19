@@ -44,19 +44,23 @@ const AreaSchema = new Schema<IArea>({
     },
     total_incidents: {
         type: Number,
-        required: true
+        required: true,
+        default:0
     },
     total_damage: {
         type: Number,
-        required: true
+        required: true,
+        default:0
     },
     latitude: {
         type: Number ,
-        required: true
+        required: true,
+        default:0
     },
     longitude: {
         type: Number,
-        required: true
+        required: true,
+        default:0
     }
     })
     

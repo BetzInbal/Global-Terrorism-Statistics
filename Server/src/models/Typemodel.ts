@@ -14,7 +14,8 @@ const TypeSchema = new Schema<IType>({
     },
     total_damage: {
         type: Number,
-        required: true
+        required: true,
+        default:0
     }
 })
 
