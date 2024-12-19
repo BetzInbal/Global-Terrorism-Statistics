@@ -1,7 +1,7 @@
 import mongoose, { Schema, Document, Double } from "mongoose";
 
 
-export interface IEnents extends Document {
+export interface IEvent extends Document {
     eventid: number,
     iyear: number,
     imonth: number,
@@ -23,7 +23,7 @@ export interface IEnents extends Document {
 }
 
 
-const EventSchema = new Schema<IEnents>({
+const EventSchema = new Schema<IEvent>({
     eventid: {
         type: Number,
         unique: true,
@@ -98,4 +98,4 @@ const EventSchema = new Schema<IEnents>({
     }
 });
 
-export default mongoose.model<IEnents>("Event", EventSchema);
+export default mongoose.model<IEvent>("Event", EventSchema);

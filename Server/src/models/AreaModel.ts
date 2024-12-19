@@ -9,24 +9,23 @@ interface incidents {
 const IncidentsSchema = new Schema<incidents>({
     gname: {
         type: String,
-        unique: true,
         required: true
     },
     total_incidents: {
         type: Number,
         required: true,
-        default:0
+        default: 0
     },
     total_damage: {
         type: Number,
         required: true,
-        default:0
+        default: 0
     }
 })
 
 export interface IArea extends Document {
     area: string,
-    incidents:incidents[],
+    incidents: incidents[],
     total_incidents: number
     total_damage: number,
     latitude: number,
@@ -47,23 +46,23 @@ const AreaSchema = new Schema<IArea>({
     total_incidents: {
         type: Number,
         required: true,
-        default:0
+        default: 0
     },
     total_damage: {
         type: Number,
         required: true,
-        default:0
+        default: 0
     },
     latitude: {
-        type: Number ,
-        required: true,
-        default:0
+        type: Number,
+
+        default: 0
     },
     longitude: {
         type: Number,
-        required: true,
-        default:0
+
+        default: 0
     }
-    })
-    
-    export default mongoose.model<IArea>("Area", AreaSchema)
+})
+
+export default mongoose.model<IArea>("Area", AreaSchema)
