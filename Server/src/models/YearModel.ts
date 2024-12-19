@@ -13,7 +13,8 @@ const IncidentsSchema = new Schema<incidents>({
     },
     total_incidents: {
         type: Number,
-        required: true
+        required: true,
+        default:0
     }
 })
 
