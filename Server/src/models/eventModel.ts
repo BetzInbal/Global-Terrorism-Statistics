@@ -26,72 +26,55 @@ export interface IEvent extends Document {
 const EventSchema = new Schema<IEvent>({
     eventid: {
         type: Number,
-        unique: true,
-        required: true
+        unique: true
     },
     iyear: {
-        type: Number,
-        required: true
+        type: Number
     },
     imonth: {
-        type: Number,
-        required: true
+        type: Number
     },
     iday: {
-        type: Number,
-        required: true
+        type: Number
     },
     country_txt: {
-        type: String,
-        required: true
+        type: String
     },
     region_txt: {
-        type: String,
-        required: true
+        type: String
     },
     city: {
-        type: String,
-        required: true
+        type: String
     },
     latitude: {
-        type: Number ,
-        required: true
+        type: Number 
     },
     longitude: {
-        type: Number,
-        required: true
+        type: Number
     },
     attacktype1_txt: {
-        type: String,
-        required: true
+        type: String
     },
     targtype1_txt: {
-        type: String,
-        required: true
+        type: String
     },
     target1: {
-        type: String,
-        required: true
+        type: String
     },
     gname: {
-        type: String,
-        required: true
+        type: String
     },
     weaptype1_txt: {
-        type: String,
-        required: true
+        type: String
     },
     nkill: {
-        type: Number,
-        required: true
+        type: Number
     },
     nwound: {
-        type: Number,
-        required: true
+        type: Number
     },
     nperps: {
-        type: Number,
-        required: true
+        type: Number
     },
     summary: {
         type: String,
